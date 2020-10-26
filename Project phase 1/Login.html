@@ -1,0 +1,50 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Petify</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <link rel="stylesheet" href="CSS_files/style.css"/>
+    <link rel="stylesheet" href="CSS_files/loginstyle.css"/>
+    <script src="js_files/loginjs.js"></script>
+</head>
+<body>
+    <div class="bg-shade"></div>
+    <div class="home-container">
+    <div id="login-signup-container">
+        <center>
+        <div id="login-container">
+            <label>Log In</label>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <a href="#"><small>Forgot your password you idiot?</small></a><br>
+            <button id="login-button" class="button-3">
+                <div class="circle-login"></div>
+                <a href="#">Let's Go!</a>
+            </button>
+            <div id="signup" onclick="signupMove()"><span>Signup</span></div>
+        </div>
+        </center>
+        <div id="signup-container">
+            <center><label>Sign Up</label></center>
+            <div class="center">
+                <input type="text" placeholder="Full Name">
+                <input type="date" id="birthday" name="birthday">
+            </div>
+            <div class="center">
+                <input type="text" placeholder="Username">
+                <input type="email" placeholder="Email">
+            </div>
+            <div class="center">
+                <input type="password" placeholder="Password">
+                <input type="password" placeholder="Confirm Password">
+            </div>
+            <button id="signup-button" class="button-3">
+                <div class="circle-signup"></div>
+                <a href="#">Let's Go!</a>
+            </button>
+            <div id="login" onclick="loginMove()"><span>Login</span></div>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

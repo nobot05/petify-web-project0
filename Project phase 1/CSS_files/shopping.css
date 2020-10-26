@@ -1,0 +1,97 @@
+body{
+    font-family: sans-serif;
+/*
+    padding-left: 5%;
+    padding-right: 5%;
+*/
+}
+
+.bs-linebreak {
+    height:10px;
+}
+
+.content{
+/*    margin: 0 auto;*/
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+#search-type{
+    margin: 10px auto;
+    background-color: azure;
+    width: 70%;
+    box-shadow: 1px 1px 5px #454242;
+}
+#search-icon{
+    margin-left: 0;
+    border-radius: 22%;
+    float: left;
+}
+#search-bar{
+    height: 50px;
+    width: 50%;
+    border: none;
+    padding: 0;
+    margin-left: 5%;
+    background-color: azure;
+    font-size: 16px;
+}
+#results-count{
+    color: indianred;
+    font-weight: bold;
+    position: relative;
+    left: 20%;
+    font-family: 'Indie Flower', cursive;
+}
+
+#advanced-search{
+    text-align: center;
+    margin: 10px auto;
+    background-color: azure;
+    width: 70%;
+    padding: 2%;
+    box-shadow: 1px 1px 5px #454242;
+}
+
+#advanced-search h2{
+    margin: 5px auto;
+}
+
+.selectors{
+/*    margin: 0 auto;*/
+    width: 25%;
+    display: inline-block;
+}
+
+#posts{
+    margin: 10px auto;
+    background-color: azure;
+    width: 70%;
+    padding: 2%;
+    box-shadow: 1px 1px 5px #454242;
+}
+
+#posts h2{
+    margin-bottom: 4%;
+}
+
+.post{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid #454242;
+    box-shadow: 1px 1px 4px #454242;
+    padding: 1%;
+    height: 10%;
+}
+
+.post-img{
+    height: 100%;
+    float: left;
+    margin-right: 1%;
+}
+
+.post .date{
+    color: darkgrey;
+}

@@ -1,0 +1,312 @@
+html,body{
+    overflow: hidden;
+}
+
+.center{
+    position: relative;
+    left: 15%;
+}
+
+#login-signup-container{
+/*
+    position: absolute;
+    top: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+*/
+    box-shadow: 1px 1px 10px #68b0ab;
+    border: 1px solid #68b0ab;
+    border-radius: 1%;
+    background-color: #d8e6dc;
+    padding: 100px 40px;
+    margin: auto;
+    position: absolute;
+    top: 50px; left: 0; bottom: 0; right: 0;
+    height: 50%; width: 75%;
+}
+
+center{
+    padding: 0;
+}
+
+#login-container{
+    width: 100%;
+    height: 100%;
+    visibility: visible;
+}
+
+#login-container input{
+    height: 15%;
+    width: 50%;
+    display: block;
+    margin: 30px 0;
+    font-size: 25px;
+}
+
+
+#signup-container{
+    width: 0;
+    height: 100%;
+    visibility: hidden;
+}
+
+#signup-container input{
+    display: inline;
+    height: 12%;
+    width: 35%;
+    display: block;
+    margin: 20px 20px;
+    font-size: 20px;
+    float: left;
+}
+
+label{
+    display: block;
+    font-family: 'Indie Flower', cursive;
+    font-size: 55px;
+}
+
+input{
+    border: none;
+    border-bottom: 1px solid;
+    border-bottom-color: #68b0ab;
+    background-color: #D9E4DD;
+}
+input:focus{
+    border: none;
+    background-color: lightblue;
+}
+
+input:hover{
+    background-color: lightblue;
+}
+
+a small{
+    font-family: 'Pacifico', cursive;
+}
+
+button {
+  display: inline-flex;
+  height: 40px;
+  width: 150px;
+/*  border: 2px solid #68b0ab;*/
+  margin: 20px 20px 20px 20px;
+/*  color: #68b0ab;*/
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: .8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+ button {
+/*  color: #68b0ab;*/
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+
+/* First Button */
+
+
+/* Third Button */
+
+.button-3 {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button-3 a {
+  padding-top: 10%;
+  font-family: 'Indie Flower', cursive;
+  text-decoration: none;
+  position: relative;
+  transition: all .45s ease-Out;
+}
+
+.circle-login {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #68b0ab;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+.circle-signup {
+  width: 0%;
+  height: 0%;
+  opacity: 0;
+  line-height: 40px;
+  border-radius: 50%;
+  background: #ff7e67;
+  position: absolute;
+  transition: all .5s ease-Out;
+  top: 20px;
+  left: 70px;
+}
+
+.button-3:hover .circle-login {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+.button-3:hover .circle-signup {
+  width: 200%;
+  height: 500%;
+  opacity: 1;
+  top: -70px;
+  left: -70px;
+}
+
+.button-3:hover a {
+  color: #2D3142;
+}
+
+#login-button{
+  border: 2px solid #68b0ab;
+  color: #68b0ab;
+  position: absolute;
+  bottom: 0;
+  right: 40.5%;
+}
+
+#signup-button{
+  border: 2px solid #ff7e67;
+  color: #ff7e67;
+  position: absolute;
+  bottom: 0;
+  left: 42.25%;
+}
+
+#login-button a{
+    color: #68b0ab;
+    width: 100%;
+    height: 100%;
+}
+
+#login-button a:hover{
+    color: white;
+}
+
+
+#signup-button a{
+    color: #ff7e67;
+    width: 100%;
+    height: 100%;
+}
+
+#signup-button a:hover{
+    color: white;
+}
+
+
+#signup{
+    cursor: pointer;
+    font-family: 'Indie Flower', cursive;
+    font-size: 25px;
+    border: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    outline: none;
+    height: 100%;
+    width: 10%;
+/*    background-color: #D9E4DD;*/
+    border: 1px solid #ff7e67;
+    background-color: #ff7e67;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #ff7e67;
+}
+
+#signup span{
+    position: absolute;
+    top: 50%;
+    right: 15%;
+}
+
+#login{
+    cursor: pointer;
+    font-size: 25px;
+    border: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    outline: none;
+    height: 100%;
+    width: 10%;
+/*    background-color: #D9E4DD;*/
+    border: 1px solid #68b0ab;
+    background-color: #68b0ab;
+    border-radius: 5px;
+    box-shadow: 1px 1px 10px #68b0ab;
+}
+
+#login span{
+    position: absolute;
+    top: 50%;
+    left: 25%;
+}
+
+@keyframes fadeOut{
+    from{opacity: 1;
+         width: 100%;
+         height: 100%;
+         visibility: visible;}
+    to  {opacity: 0;
+         width: 0;
+         height: 0;
+         visibility: hidden;}
+}
+
+@keyframes fadeIn{
+    from{opacity: 0;
+         width: 0;
+         height: 0;
+         visibility: hidden;}
+    to  {opacity: 1;
+         width: 100%;
+         height: 100%;
+         visibility: visible;}
+}
+
+
+@keyframes switch{
+    from {width: 10%;
+          opacity: 1;}
+    to {width: 100%;
+         opacity: 0;}
+}
+
+@keyframes switchBack{
+    from {width: 100%;
+          opacity: 0;}
+    to {width: 10%;
+         opacity: 1;}
+}
+
+@keyframes borderLogin{
+    from{box-shadow: 1px 1px 10px #ff7e67;
+         border: 1px solid #ff7e67;}
+    to{box-shadow: 1px 1px 10px #68b0ab;
+         border: 1px solid #68b0ab;}
+}
+
+@keyframes borderSignup{
+    from{box-shadow: 1px 1px 10px #68b0ab;
+         border: 1px solid #68b0ab;}
+    to{
+        box-shadow: 1px 1px 10px #ff7e67;
+         border: 1px solid #ff7e67;}
+}
+

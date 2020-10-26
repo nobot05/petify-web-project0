@@ -1,0 +1,66 @@
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<style>
+    html,body{
+        padding: 0;
+        margin: 0;
+    }
+    .mainHeader h1 {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ea594e;
+    box-shadow: 0 0 3px 3px #888888;
+    font-family: verdana;
+    font-variant: small-caps;
+    color: white;
+    border-bottom: 1px solid black;
+    margin: 0;
+    padding-bottom: 0.5%;
+    text-align: center;
+}
+
+.mainHeader .secondaryNav {
+    background: #ffcda4;
+    box-shadow: 0 3px 3px 1px #888888;
+    border: 1px solid;
+   border-top: none;
+    width: 400px;
+    position: fixed;
+    top: 49px;
+    left: 50%;
+    margin-left: -200px;
+    border-radius: 0 0 50px 50px;
+    padding-top: 5px;
+}
+    
+    
+</style>
+    
+</head>
+<body>
+<header class="mainHeader">
+  <h1>Page Title</h1>
+    <nav class="secondaryNav">
+      <a href="home.htm"><img class="backButton" src="img/back2.png" alt="Back Button"></a>
+      <a href="home.htm"><img class="homeButton" src="img/home.png" alt="Home Button"></a>
+    </nav>
+    <aside><p id="countdown"></p></aside>
+</header>
+
+<script>
+$(function() {
+  $(document).on("mousewheel", function() {
+    if($(document).scrollTop() > 100){
+        $('.secondaryNav').show();
+        $('.mainHeader h1').hide();
+    } else {
+        $('.secondaryNav').hide();
+        $('.mainHeader h1').show();
+    }; 
+  });
+});
+</script>
+</body>
+</html>

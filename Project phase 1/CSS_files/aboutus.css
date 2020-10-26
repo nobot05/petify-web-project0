@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap%27');
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap%27');
+#main-logo-text{
+    font-family: 'Indie Flower',cursive;
+}
+html, body {
+    font-family: 'Indie Flower', cursive;
+/*    background-color: salmon;*/
+    z-index: -5;
+}
+
+.fake-space{
+    opacity: 0;
+    width: 1%;
+    margin: 0;
+    padding: 0;
+}
+
+.Our-team-h2-bg{
+    padding-top: 10px;
+    width: 100%;
+    background: #D9E4DD;
+}
+
+.Our-team-h2{
+text-align: center;
+width: 20%;
+background-color: antiquewhite;
+padding-top: 2%;
+padding-bottom: 2%;
+margin: auto;
+font-family: 'Indie Flower',cursive;
+border: 2px ridge darkslategray;
+border-radius: 3%;
+}
+
+
+.row{
+/*   padding-left: 15%;*/
+   padding-bottom: 10%;
+   background-color:#D9E4DD ;
+   width: 100% !important;
+   margin: 0;
+   text-align: center;
+}
+.about-us-section{
+    position: relative;
+    font-family: 'Indie Flower', cursive;
+    background: url("../images/details%20bg.jpg");
+    padding: 5%;
+    padding-bottom: 5px;
+    height: 20%;
+    margin: auto;
+    margin-bottom: 10px;
+    border-radius: 2%;
+    width: 85%;
+    text-align: center;
+    box-sizing: border-box;
+/*    background-color:#D9E4DD;*/
+}
+
+.about-us-section h1{
+    background-color: wheat;
+    width: 50%;
+    border-radius: 10%;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.about-us-section h1:hover{
+    width: 55%;
+    box-shadow: 1px 1px 10px #454242;
+    font-size: 310%;
+}
+
+.our-team-row{
+    padding-left: 15%;
+/*    padding-right: 1%;*/
+}
+
+@media max-width:520px{
+    .our-team-row{
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+}
+
+
+.our-team {
+  padding-top: 15%;
+  margin-bottom: 30px;
+  background-color: #f7f5ec;
+  text-align: center;
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+  border: 8px solid;
+  border-image: url("../images/black%20wood.jpg") 8 stretch;
+/*  border-radius: 10%;*/
+
+}
+
+/*
+.our-team::after {
+  border-radius: 10%;
+
+}
+*/
+
+.our-team .picture {
+  display: inline-block;
+  height: 130px;
+  width: 100px;
+  margin-bottom: 50px;
+  z-index: 1;
+  position: relative;
+}
+
+.our-team .picture::before {
+  content: "";
+  width: 100%;
+  border-radius: 50%;
+  background-color: #ff7e67;
+  position: absolute;
+  bottom: 130%;
+  opacity: 0.9;
+  transform: scale(3);
+  transition: all 0.3s linear 0s;
+}
+
+.our-team:hover .picture::before {
+  height: 70%;
+}
+
+.our-team .picture::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color:#ff7e67;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.our-team .picture img {
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  transform: scale(1);
+  transition: all 0.9s ease 0s;
+}
+
+.our-team:hover .picture img {
+  box-shadow: 0 0 0 14px #f7f5ec;
+  transform: scale(0.7);
+}
+
+.our-team .title {
+  display: block;
+  font-size: 15px;
+  color: #4e5052;
+  text-transform: capitalize;
+}
+
+.our-team .social {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: #ff7e67;
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  transition: all 0.5s ease 0s;
+}
+
+.our-team:hover .social {
+  bottom: 0;
+}
+
+.our-team .social li {
+  display: inline-block;
+}
+
+.our-team .social li a {
+  display: block;
+  padding: 10px;
+  font-size: 17px;
+  color: white;
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+}
+
+.our-team .social li a:hover {
+  color: #ff7e67;
+  background-color: #f7f5ec;
+}
+
+.details{
+    height: 250px;
+    width: 90%;
+    min-width: 60%;
+    padding: 3%;
+    background-color: #f7f5ec;
+/*
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 10px;
+*/
+    margin: 0 auto;
+/*    border: 1px solid antiquewhite;*/
+    border: 5px solid;
+    border-image: url(../images/black%20wood.jpg) 5;
+    box-shadow: 2px 1px 10px #454242;
+}
+
+#goals{
+/*
+    display: block;
+    margin-left: 20px;
+*/
+}
+
+#achievements ul li{
+    list-style: none;
+}
+
+#achievements ul li:before{
+    content: "✓ ";
+}
+
+
+.button {
+    display: inline-block;
+    padding: 5px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+    border-radius: 10%;
+    margin-bottom: 4%;
+  }
+
+.button:hover {
+    background-color: #ff7e67;
+    border:none;
+  }
+
+/**
+ * Fancy border
+ * ============
+*/
+
+.fancy-border {
+  border: 25px solid #B88846;
+  border-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='75' height='75'%3E%3Cg fill='none' stroke='%23B88846' stroke-width='2'%3E%3Cpath d='M1 1h73v73H1z'/%3E%3Cpath d='M8 8h59v59H8z'/%3E%3Cpath d='M8 8h16v16H8zM51 8h16v16H51zM51 51h16v16H51zM8 51h16v16H8z'/%3E%3C/g%3E%3Cg fill='%23B88846'%3E%3Ccircle cx='16' cy='16' r='2'/%3E%3Ccircle cx='59' cy='16' r='2'/%3E%3Ccircle cx='59' cy='59' r='2'/%3E%3Ccircle cx='16' cy='59' r='2'/%3E%3C/g%3E%3C/svg%3E") 25;
+    background-color: whitesmoke;
+}
